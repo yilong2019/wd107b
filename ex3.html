@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>問卷調查</title> 
+</head>
+<body>
+<h1>個人問卷調查</h1>
+<form action="demo-form.php">
+  你的名字是 <input type="text" name="name"><br>
+  生日: <input type="date" name="bday"><br>
+  生理性別  <input type="radio" name="sex">男
+    <input type="radio" name="sex">女<br>
+	e-mail <input type="email" name="email"><br>
+	血型 <input type="radio" name="bdtype">A
+	<input type="radio" name="bdtype">B
+	<input type="radio" name="bdtype">AB
+	<input type="radio" name="bdtype">Ｏ<br>
+	我最愛的顏色 <input type="color" name="favcolor"><br>
+	星座
+<select>
+	<option value="牡羊">牡羊</option>
+	<option value="摩羯">摩羯</option>
+	<option value="巨蠍">巨蠍</option>
+	<option value="處女">處女</option>
+	<option value="射手">射手</option>
+	<option value="天秤">天秤</option>
+	<option value="水瓶">水瓶</option>
+	<option value="雙魚">雙魚</option>
+	<option value="金牛">金牛</option>
+	<option value="獅子">獅子</option>
+	<option value="天蠍">天蠍</option>
+	<option value="雙子">雙子</option>
+</select><br>
+	學歷程度 <input list="edc" name="edc">
+	<datalist id="edc">
+  <option value="幼稚園">
+  <option value="國小">
+  <option value="國中">
+  <option value="高中/高職">
+  <option value="大學/五專">
+</datalist><br>
+	你喜歡的狗狗<br> <input type="checkbox" name="dog" value="哈士奇">哈士奇<br>
+	<input type="checkbox" name="dog" value="柴犬">柴犬<br>
+	<input type="checkbox" name="dog" value="藏獒">哈士奇<br>
+	<input type="checkbox" name="dog" value="柯基">柯基<br>
+	<input type="checkbox" name="dog" value="貴賓犬">貴賓犬<br>
+	<input type="checkbox" name="dog" value="臘腸犬">臘腸犬<br>
+	<input type="checkbox" name="dog" value="其他">其他<br>
+</form>
+	<img src ="http://www.ratoo.net/uploads/allimg/161210/12-161210103S1.jpg" width="600" height="500">
+	
+</body>
+</html>

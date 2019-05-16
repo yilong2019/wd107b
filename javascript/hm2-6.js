@@ -1,0 +1,3 @@
+function commonFactor(a,b){
+    
+}

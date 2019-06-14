@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<style>
+table{
+	color:blue;
+	text-align:center;
+	}
+h1,h3,h6{
+color: #FF0088;
+text-align: center;
+	margin:0px;
+}
+p {
+color: black;
+text-align: center;
+z-index:-1;
+}
+body {
+  margin: 0px; 
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #0000FF;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: red;
+}
+.show {
+  display: block;
+}
+.sidebar {
+  position: fixed;
+  top: 45px;
+  left: 0px;
+  width: 10px;
+  height: 1000px;
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 10px 5px;
+  white-space:nowrap;
+  
+}
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.80;
+}
+.sidebar li, .sidebar ul {
+  list-style-type: none;
+  margin: 5px 10px;
+  padding: 10px;
+}
+.sidebar {
+  transition: width 1s;
+ }
+.sidebar a:hover {
+  color: pink;
+}
+.sidebar:hover {
+  width: 150px; 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<body>
+<div class="sidebar">
+ <ul>
+ <li><a href="https://yilong2019.github.io/wd107b/html/ex3.html">訪客資料填寫</a></li>
+ <li><a href="#訪客基本資料">訪客基本資料()</a></li>
+ <li><a href="#日記撰寫">日記撰寫</a></li>
+ <li><a href="#上傳相簿">上傳相簿</a></li>
+ <li><a href="#線上帳戶">線上帳戶</a></li>
+ </ul>
+</div>
+<div class="navbar">
+  <a href="#主頁">主頁</a>
+  <a href="#祕密花園">祕密花園</a>
+  <div class="dropdown">
+  <button class="dropbtn">生活札記
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="#日記">日記</a>
+    <a href="#行事曆">行事曆</a>
+    <a href="#年度企劃">年度企劃</a>
+  </div>
+  </div> 
+</div>
+
+<h1>個人生涯紀錄</h1>
+<h3>個人生涯紀錄</h3>
+<h6>個人生涯紀錄</h6>
+<br>
+<table border="5" align="center">
+    <tr>
+        <th>就讀學校</th>
+   		<th>工作單位</th>
+    <th>居住地</th>
+ 	</tr>
+    <tr>
+        <td><a href="https://www.nqu.edu.tw">金門大學校網</a></td>
+        <td>加油站</td>
+		<td><a href="https://www.hsinchu.gov.tw/">新竹縣政府</a></td>		
+    </tr>
+    <tr>
+        <td><a href="http://www.ljjh.hcc.edu.tw">六家高中校網</a></td>
+        <td>(缺)</td>
+		<td><a href="https://www.kinmen.gov.tw/">金門縣政府</a></td>
+	</tr>	
+</table>
+	<br>
+	<br>
+<form name="input" action="html_form_action.php" method="get">	
+<table border="3" align="center" width="500">
+	<tr>
+		<th>訪客留言區</th>
+	</tr>
+	<tr  height="250">
+		<td><textarea rows="14" cols="70"></textarea></td>
+	</tr>
+	<tr >
+		<td><input type="submit" value="Submit"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
